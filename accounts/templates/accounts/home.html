@@ -2,8 +2,38 @@
 
 {% block content %}
 
-<h1>THIS IS HOME HOMIE</h1>
+<h1>BCI - Ciencia Ciudadana</h1>
 
+{% include 'accounts/status.html' %}
+
+<br>
+
+<div class="row">
+ <div class="col-md-12">
+  <h5>POZOS EN CUENCAS DE BCS</h5>
+  <hr>
+  <div class="card card-body">
+   <a class="btn btn-primary  btn-sm btn-block" href="">Actualizar Pozo</a>
+   <table class="table table-lg">
+    <tr>
+     <th></th>
+     <th>Pozo</th>
+     <th>Municipio</th>
+     <th>Localidad</th>
+     <th>Coordenadas</th>
+     <th>Desinfeccion</th>
+     <th>Nivel de fluoruro</th>
+     <th>Nivel de Arsenico</th>
+     <th>Ultimo Reporte</th>
+    </tr>
+
+   </table>
+  </div>
+ </div>
+
+</div>
+
+<br>
 <h2> UNDER DEVELOPMENT </h2>
 
 {% endblock %}

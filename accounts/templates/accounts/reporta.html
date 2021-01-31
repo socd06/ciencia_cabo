@@ -1,8 +1,43 @@
+<!DOCTYPE html>
+
 {% extends 'accounts/main.html' %}
 
 {% block content %}
 
-<h1>Reporta</h1>
+<h3>Reporta</h3>
+
+<hr>
+
+<form action="" method="post">
+  {% csrf_token %}
+  {{form}}
+  <input type="submit">
+</form>
+
+<br>
+
+<div class="row">
+<div class="col-md">
+  <div class="card card-body">
+    <table class="table table-lg">
+      <tr>
+       <th></th>
+       <th>Pozo</th>
+       <th>Municipio</th>
+       <th>Localidad</th>
+       <th>Coordenadas</th>
+       <th>Desinfeccion</th>
+       <th>Nivel de fluoruro</th>
+       <th>Nivel de Arsenico</th>
+       <th>Ultimo Reporte</th>
+      </tr>
+
+    </table>
+  </div>
+</div>
+</div>
+
+
 
 <br>
 
